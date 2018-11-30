@@ -17,9 +17,9 @@
       <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <![endif]-->
     <style>
-         html,body{margin:0;padding:0;}
+         /* html,body{margin:0;padding:0;}
         .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
-        .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+        .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word} */
         
         .header{
             background-image: url("img/logo0.png");
@@ -433,11 +433,11 @@
 		script.type = "text/javascript";
 		script.src = "https://api.map.baidu.com/api?v=2.0&ak=XWQdaVK1nmXEOtah0c3dHWEBlsrdbfBO&callback=init";
 		document.body.appendChild(script);
-	}
+	    }
 
 
         //创建和初始化地图函数：
-        function initMap(){
+        function init(){
             createMap();//创建地图
             setMapEvent();//设置地图事件
             addMapControl();//向地图添加控件
@@ -478,10 +478,7 @@
             //向地图中添加比例尺控件
         var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
         map.addControl(ctrl_sca);
-        }
-        
-        
-        initMap();//创建和初始化地图
+        } 
     </script>  
     </body>
 </html>
