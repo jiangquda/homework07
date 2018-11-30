@@ -183,6 +183,15 @@
 .map2{
     margin-top: 80px;
 }
+.erweima img{
+    width: 120px;
+    height: 120px;
+}
+.erweima{
+    position: fixed;
+    top: 70%;
+    right: 0;
+}
 
 
 
